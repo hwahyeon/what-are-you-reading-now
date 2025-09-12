@@ -4,7 +4,7 @@ const schema = z.object({
   theme: z.string().trim().toLowerCase().optional().default("light"),
   title: z.string().trim().optional().default(""),
   author: z.string().trim().optional().default(""),
-  img: z.string().url().startsWith("https://").optional(),
+  img: z.url().startsWith("https://").optional(),
   progress: z.coerce.number().int().min(0).max(100).optional(),
 });
 
