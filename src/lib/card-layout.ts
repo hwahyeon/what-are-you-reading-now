@@ -18,9 +18,9 @@ export const CARD = {
 
 export const COVER = {
   x: 24,
-  y: 24,
+  y: (CANVAS.h - 172) / 2,
   w: 132,
-  h: 180,
+  h: 172,
   r: 12,         // cover corner radius
 } as const;
 
